@@ -1,113 +1,174 @@
 [
-    {
-      "id": 1,
-      "title": "Camiseta deportiva",
-      "description": "Camiseta de alta calidad para deportes.",
-      "code": "CAMIS001",
-      "price": 19.99,
-      "status": true,
-      "stock": 50,
-      "category": "Ropa",
-      "thumbnails": ["/images/camiseta1.jpg", "/images/camiseta2.jpg"]
-    },
-    {
-      "id": 2,
-      "title": "Zapatillas running",
-      "description": "Zapatillas ligeras y cómodas para correr.",
-      "code": "ZAPA002",
-      "price": 59.99,
-      "status": true,
-      "stock": 30,
-      "category": "Calzado",
-      "thumbnails": ["/images/zapatillas1.jpg", "/images/zapatillas2.jpg"]
-    },
-    {
-      "id": 3,
-      "title": "Sudadera con capucha",
-      "description": "Sudadera de algodón con capucha.",
-      "code": "SUDA003",
-      "price": 29.99,
-      "status": true,
-      "stock": 40,
-      "category": "Ropa",
-      "thumbnails": ["/images/sudadera1.jpg"]
-    },
-    {
-      "id": 4,
-      "title": "Pantalones de chándal",
-      "description": "Pantalones cómodos para hacer ejercicio.",
-      "code": "PANT004",
-      "price": 24.99,
-      "status": true,
-      "stock": 25,
-      "category": "Ropa",
-      "thumbnails": ["/images/pantalones1.jpg", "/images/pantalones2.jpg"]
-    },
-    {
-      "id": 5,
-      "title": "Guantes de entrenamiento",
-      "description": "Guantes para proteger tus manos durante el entrenamiento.",
-      "code": "GUAN005",
-      "price": 14.99,
-      "status": true,
-      "stock": 100,
-      "category": "Accesorios",
-      "thumbnails": []
-    },
-    {
-      "id": 6,
-      "title": "Botella de agua",
-      "description": "Botella reutilizable para mantenerse hidratado.",
-      "code": "BOTE006",
-      "price": 9.99,
-      "status": true,
-      "stock": 200,
-      "category": "Accesorios",
-      "thumbnails": ["/images/botella1.jpg"]
-    },
-    {
-      "id": 7,
-      "title": "Cinta para correr",
-      "description": "Cinta de correr para hacer ejercicio en casa.",
-      "code": "CINT007",
-      "price": 499.99,
-      "status": true,
-      "stock": 10,
-      "category": "Equipamiento",
-      "thumbnails": ["/images/cinta1.jpg", "/images/cinta2.jpg"]
-    },
-    {
-      "id": 8,
-      "title": "Mancuernas ajustables",
-      "description": "Juego de mancuernas con peso ajustable.",
-      "code": "MANC008",
-      "price": 89.99,
-      "status": true,
-      "stock": 15,
-      "category": "Equipamiento",
-      "thumbnails": ["/images/mancuernas1.jpg"]
-    },
-    {
-      "id": 9,
-      "title": "Esterilla de yoga",
-      "description": "Esterilla antideslizante para yoga y pilates.",
-      "code": "ESTE009",
-      "price": 19.99,
-      "status": true,
-      "stock": 75,
-      "category": "Accesorios",
-      "thumbnails": ["/images/esterilla1.jpg", "/images/esterilla2.jpg"]
-    },
-    {
-      "id": 10,
-      "title": "Bicicleta estática",
-      "description": "Bicicleta estática para ejercicio cardiovascular.",
-      "code": "BICI010",
-      "price": 299.99,
-      "status": true,
-      "stock": 5,
-      "category": "Equipamiento",
-      "thumbnails": ["/images/bicicleta1.jpg"]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "parlante",
+    "description": "Camiseta de alta calidad para deportes.",
+    "code": "CAMIS001",
+    "price": 19.99,
+    "status": true,
+    "stock": 50,
+    "category": "Ropa",
+    "thumbnails": [
+      "/images/camiseta1.jpg",
+      "/images/camiseta2.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Zapatillas running",
+    "description": "Zapatillas ligeras y cómodas para correr.",
+    "code": "ZAPA002",
+    "price": 59.99,
+    "status": true,
+    "stock": 30,
+    "category": "Calzado",
+    "thumbnails": [
+      "/images/zapatillas1.jpg",
+      "/images/zapatillas2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Sudadera con capucha",
+    "description": "Sudadera de algodón con capucha.",
+    "code": "SUDA003",
+    "price": 29.99,
+    "status": true,
+    "stock": 40,
+    "category": "Ropa",
+    "thumbnails": [
+      "/images/sudadera1.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Pantalones de chándal",
+    "description": "Pantalones cómodos para hacer ejercicio.",
+    "code": "PANT004",
+    "price": 24.99,
+    "status": true,
+    "stock": 25,
+    "category": "Ropa",
+    "thumbnails": [
+      "/images/pantalones1.jpg",
+      "/images/pantalones2.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Guantes de entrenamiento",
+    "description": "Guantes para proteger tus manos durante el entrenamiento.",
+    "code": "GUAN005",
+    "price": 14.99,
+    "status": true,
+    "stock": 100,
+    "category": "Accesorios",
+    "thumbnails": []
+  },
+  {
+    "id": 6,
+    "title": "Botella de agua",
+    "description": "Botella reutilizable para mantenerse hidratado.",
+    "code": "BOTE006",
+    "price": 9.99,
+    "status": true,
+    "stock": 200,
+    "category": "Accesorios",
+    "thumbnails": [
+      "/images/botella1.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Cinta para correr",
+    "description": "Cinta de correr para hacer ejercicio en casa.",
+    "code": "CINT007",
+    "price": 499.99,
+    "status": true,
+    "stock": 10,
+    "category": "Equipamiento",
+    "thumbnails": [
+      "/images/cinta1.jpg",
+      "/images/cinta2.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Mancuernas ajustables",
+    "description": "Juego de mancuernas con peso ajustable.",
+    "code": "MANC008",
+    "price": 89.99,
+    "status": true,
+    "stock": 15,
+    "category": "Equipamiento",
+    "thumbnails": [
+      "/images/mancuernas1.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Esterilla de yoga",
+    "description": "Esterilla antideslizante para yoga y pilates.",
+    "code": "ESTE009",
+    "price": 19.99,
+    "status": true,
+    "stock": 75,
+    "category": "Accesorios",
+    "thumbnails": [
+      "/images/esterilla1.jpg",
+      "/images/esterilla2.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Bicicleta estática",
+    "description": "Bicicleta estática para ejercicio cardiovascular.",
+    "code": "BICI010",
+    "price": 299.99,
+    "status": true,
+    "stock": 5,
+    "category": "Equipamiento",
+    "thumbnails": [
+      "/images/bicicleta1.jpg"
+    ]
+  },
+  {
+    "title": "Estereo",
+    "description": "Blauline 150",
+    "code": "BLAU150",
+    "price": "15000",
+    "status": true,
+    "stock": 1,
+    "category": "estereos",
+    "thumbnails": [
+      "/images/estereo01"
+    ],
+    "id": null
+  },
+  {
+    "title": "estereo 2",
+    "description": "Blauline 150",
+    "code": "BLAU150",
+    "price": "15000",
+    "status": true,
+    "stock": 1,
+    "category": "estereos",
+    "thumbnails": [
+      "/images/estereo01"
+    ],
+    "id": null
+  },
+  {
+    "title": "estereo 3",
+    "description": "Blauline 150",
+    "code": "BLAU150",
+    "price": "15000",
+    "status": true,
+    "stock": 1,
+    "category": "estereos",
+    "thumbnails": [
+      "/images/estereo01"
+    ],
+    "id": 11
+  }
+]
