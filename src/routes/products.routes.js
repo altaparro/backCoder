@@ -9,4 +9,6 @@ productoRouter.post("/products/crearProducto", productosController.crearProducto
 
 productoRouter.put("/products/actualizarProducto/:id", productosController.actualizarProducto)
 
+productoRouter.delete("/products/eliminarProducto/:id", productosController.eliminarProducto)
+
 module.exports = productoRouter

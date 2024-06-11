@@ -147,4 +147,47 @@ async function actualizarProducto(req, res) {
   }
 }
 
-module.exports = { obtenerTodosLosProductos, obtenerProductoPorId, crearProducto, actualizarProducto };
+async function eliminarProducto(req, res) {
+  try {
+    const filePath = path.join(__dirname, '..', '..', 'productos.json');
+    const data = await fs.readFile(filePath, 'utf-8');
+    const products = JSON.parse(data);
+
+    // Obtener el ID del producto desde los parámetros de la ruta
+    const productId = parseInt(req.params.id, 10);
+
+    // Buscar el índice del producto con el ID especificado
+    const productIndex = products.findIndex(p => p.id === productId);
+
+    if (productIndex === -1) {
+      return res.status(404).json({
+        ok: false,
+        status: 404,
+        message: "Producto no encontrado",
+      });
+    }
+
+    // Eliminar el producto del array
+    const deletedProduct = products.splice(productIndex, 1);
+
+    // Escribir el array actualizado de productos de vuelta al archivo
+    await fs.writeFile(filePath, JSON.stringify(products, null, 2));
+
+    res.status(200).json({
+      ok: true,
+      status: 200,
+      message: "Producto eliminado correctamente",
+      body: deletedProduct[0],
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      ok: false,
+      status: 500,
+      error: error.message,
+    });
+  }
+}
+
+module.exports = { obtenerTodosLosProductos, obtenerProductoPorId, crearProducto, actualizarProducto, eliminarProducto };

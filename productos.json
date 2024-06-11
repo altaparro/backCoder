@@ -120,19 +120,6 @@
     ]
   },
   {
-    "id": 10,
-    "title": "Bicicleta estática",
-    "description": "Bicicleta estática para ejercicio cardiovascular.",
-    "code": "BICI010",
-    "price": 299.99,
-    "status": true,
-    "stock": 5,
-    "category": "Equipamiento",
-    "thumbnails": [
-      "/images/bicicleta1.jpg"
-    ]
-  },
-  {
     "title": "Estereo",
     "description": "Blauline 150",
     "code": "BLAU150",
