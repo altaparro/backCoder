@@ -1,7 +1,10 @@
-const viewsRouter = require("express").Router()
+const express = require('express');
+const router = express.Router();
+const path = require('path');
+const products = require(path.join(__dirname, '../../productos.json'));
 
-viewsRouter.get("/", (req, res) => {
-    res.render("index")
-})
+router.get('/', (req, res) => {
+    res.render('home', { products });
+});
 
-module.exports = viewsRouter
+module.exports = router;
