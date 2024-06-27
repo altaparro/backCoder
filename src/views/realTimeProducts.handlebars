@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Products</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const ws = new WebSocket('ws://' + window.location.host);
+
+      ws.onmessage = (event) => {
+        const products = JSON.parse(event.data);
+        const productList = document.getElementById('product-list');
+        productList.innerHTML = '';
+        products.forEach(product => {
+          const li = document.createElement('li');
+          li.textContent = product.title;
+          productList.appendChild(li);
+        });
+      };
+
+      document.getElementById('add-product-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const title = document.getElementById('title').value;
+        const id = new Date().getTime();
+        const product = { id, title };
+        ws.send(JSON.stringify({ action: 'add', product }));
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Lista de Productos</h1>
+  <ul id="product-list"></ul>
+  <form id="add-product-form">
+    <input type="text" id="title" placeholder="Nombre del producto">
+    <button type="submit">Agregar Producto</button>
+  </form>
+</body>
+</html>
